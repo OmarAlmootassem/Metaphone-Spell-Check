@@ -1,0 +1,11 @@
+
+Features/Limitations
+1. The program uses a 58 000 word dictionary that does not includes any words that have spaces in the middle or any non alphabet characters.
+2. The program uses a combination of the Levenshtein Distance algorithm and the Metaphone algorithm to find possible corrections to the incorrectly spelt words.
+3. Clicking on the buttons will result in changing the word in the text area to the word on the button
+
+KNOWN BUGS:
+1. Words must be surrounded by spaces for the spell checker to work. If there is no space around the chosen word, spellcheck will NOT run.
+2. Sometimes clicking multiple times on the incorrectly spelled word will cause the suggested words to get repeated. There are 2 ways to fix this:
+	1.Click on another word, then click on the word again.
+	2. If that doesn't fix the issue, a program restart will fix it.
