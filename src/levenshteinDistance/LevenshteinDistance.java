@@ -55,8 +55,9 @@ public class LevenshteinDistance {
 			    int[] newcost = new int[len0];                                                  
 			 
 			    // initial cost of skipping prefix in String s0                                 
-			    for (int i = 0; i < len0; i++) cost[i] = i;                                     
-			 
+			    for (int i = 0; i < len0; i++){
+			    	cost[i] = i;                                     
+			    }
 			    // dynamically computing the array of distances                                  
 			 
 			    // transformation cost for each letter in s1                                    
@@ -79,7 +80,9 @@ public class LevenshteinDistance {
 			        }                                                                           
 			 
 			        // swap cost/newcost arrays                                                 
-			        int[] swap = cost; cost = newcost; newcost = swap;                          
+			        int[] swap = cost; 
+			        cost = newcost; 
+			        newcost = swap;                          
 			    }
 			    
 			    //if LevenshteinDistance is less than or equal to 2
